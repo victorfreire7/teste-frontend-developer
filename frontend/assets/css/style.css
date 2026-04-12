@@ -1,0 +1,161 @@
+*{padding: 0; margin: 0;}
+
+@font-face {
+    font-family: 'Krona';
+    src: url("../font/KronaOne-Regular.ttf");
+}
+
+* h2{ color: var(--w); font-size: 2.0em; font-family: 'Krona'; }
+
+/* As principais cores que eu vou usar */
+:root{
+    --b: #262626;
+    --w: #F2F5F4;
+    --medio: #CFD2D1;
+    --r: #73352F
+}
+
+#main-content{
+    width: 100vw;
+    height: 100%;
+    background-color: red;
+}
+
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*
+--------------------------------------
+AS BOX A SEGUIR DIZEM A RESPEITO A PRIMEIRA BOX DO SITE
+
+AS BOX SAO SEPARADAS EM
+- HEADER (com logotipo e contato)
+- MAIN (com o conteudo principal)
+--------------------------------------
+*/
+
+#main-content .first-box{
+    width: 100%;
+    height: 95vh;
+    background-color: var(--b);
+}
+
+#main-content .first-box header{
+    width: 100%;
+    height: 15%;
+    /* background-color: aqua; */
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#main-content .first-box header *{ /* separa os dois itens da header de suas respectivas bordas*/
+    margin: 3%;
+}
+
+#main-content .first-box header .logo{
+    width: 100px;
+}
+
+#main-content .first-box header .logo img {
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+}
+
+/* -------------------------------------- */
+
+#main-content .first-box main{
+    width: 100%;
+    height: 90%;
+    background-color: red;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#main-content .first-box main * {
+    margin: 3%;
+}
+
+#main-content .first-box main .text{
+    height: 100%;
+    width: 60%;
+    background-color: blue;
+}
+
+#main-content .first-box main .box-forms{
+    height: 100%;
+    width: 40%;
+
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+#main-content .first-box main .box-forms form{
+    background-color: var(--w);
+    width: 80%;
+    height: 80%;
+
+    border-radius: 20px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#main-content .first-box main .box-forms form label{
+    height: 10%;
+    width: 70%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Krona';
+    font-size: 1.6em;
+    color: var(--r);
+}
+
+#main-content .first-box main .box-forms form input{
+    height: calc((100% / 5) - 10%); /* To fazendo essa conta pra distribuir igualmente o tamanho necessario dos 5 itens que estao sendo guardados dentro do form (os 4 inputs e o button) */
+    width: 70%;
+
+    background-color: var(--w);
+    border: solid 1.5px var(--r);
+}
+
+#main-content .first-box main .box-forms form input::placeholder{
+    color: var(--r);
+    padding-left: 5%;
+    font-size: 1.3em;
+}
+
+#main-content .first-box main .box-forms form button{
+    height: calc((100% / 5) - 10%); /* To fazendo essa conta pra distribuir igualmente o tamanho necessario dos 5 itens que estao sendo guardados dentro do form (os 4 inputs e o button) */
+    width: 70%;
+
+    font-family: 'Krona';
+    font-size: 1.5em;
+    color: var(--w);
+
+    background-color: var(--r);
+    border-radius: 20px;
+
+    cursor: pointer;
+}
+
+#main-content .first-box main .box-forms form button:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
