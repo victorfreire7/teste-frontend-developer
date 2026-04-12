@@ -74,7 +74,7 @@ AS BOX SAO SEPARADAS EM
 #main-content .first-box main{
     width: 100%;
     height: 90%;
-    background-color: red;
+    /* background-color: red; */
 
     display: flex;
     align-items: center;
@@ -86,15 +86,42 @@ AS BOX SAO SEPARADAS EM
     margin: 3%;
 }
 
-#main-content .first-box main .text{
+#main-content .first-box main .box-text{
     height: 100%;
     width: 60%;
-    background-color: blue;
+    /* background-color: blue; */
+    
+    display: flex;
+    align-items: center;
+}
+
+#main-content .first-box main .box-text .texts{
+    width: 100%;
+    margin: 0;
+    /* background-color: yellow; */
+
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+}
+
+#main-content .first-box main .box-text .texts *{
+    margin: 0 0 5% 0;
+
+    font-family: 'Krona';
+    color: var(--w);
+}
+
+#main-content .first-box main .box-text .texts h1{
+    font-size: 3.0em;
 }
 
 #main-content .first-box main .box-forms{
     height: 100%;
     width: 40%;
+
+    /* background-color: yellowgreen; */
 
     display: flex;
     align-items: center;
