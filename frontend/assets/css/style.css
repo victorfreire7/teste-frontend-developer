@@ -519,32 +519,26 @@ AS BOX SAO SEPARADAS EM
 
 /* -------------------- */
 
-#main-content .fourth-box .content .box-btns *.response{
-    margin: 0 0 2% 0;
-    
-    width: 60%;
-    height: auto;
-    background-color: var(--w);
-    border: 2px solid var(--b);
-    
-    border-radius: 10px;
-    
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    
-    cursor: pointer;
-}
-
-#main-content .fourth-box .content .box-btns *.response p{
+#main-content .fourth-box .content .box-btns .btns .answer {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
+    padding: 0;
     font-family: 'Krona';
-    font-size: 0.8em;
-    padding: 3%;
+    color: var(--b);
+    font-size: 0.9em;
 }
 
-/* #main-content .fourth-box .content .box-btns *.disable{
-    display: none;
-} */
+#main-content .fourth-box .content .box-btns .btns.active .answer {
+    max-height: 200px;
+    opacity: 1;
+    padding: 15px 0;
+}
+
+#main-content .fourth-box .content .box-btns .btns.active {
+    background-color: #E8EBEA;
+}
 
 /*
 --------------------------------------
