@@ -5,8 +5,6 @@
     src: url("../font/KronaOne-Regular.ttf");
 }
 
-* h2{ color: var(--w); font-size: 2.0em; font-family: 'Krona'; }
-
 /* As principais cores que eu vou usar */
 :root{
     --b: #262626;
@@ -14,6 +12,10 @@
     --medio: #CFD2D1;
     --r: #73352F;
     --br: #5B302C;
+}
+
+body{
+    overflow-x: hidden;
 }
 
 #main-content{
@@ -59,6 +61,12 @@ AS BOX SAO SEPARADAS EM
 
 #main-content .first-box header *{ /* separa os dois itens da header de suas respectivas bordas*/
     margin: 3%;
+}
+
+#main-content .first-box header h2{ /* separa os dois itens da header de suas respectivas bordas*/
+    color: var(--w); 
+    font-size: 2.0em; 
+    font-family: 'Krona'; 
 }
 
 #main-content .first-box header .logo{
@@ -653,6 +661,73 @@ AS BOX SAO SEPARADAS EM
     justify-content: center;
 }
 
+
+
+@media screen and (max-width: 915px){
+    #main-content .first-box header{
+        width: 100%;
+        /* height: 20%; */
+        /* background-color: aqua; */
+
+        margin-top: 5vh;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    #main-content .first-box header .logo{
+        width: 40px;
+    }
+    
+    #main-content .first-box header h2{
+        font-size: 0.9em;
+    }
+    
+    #main-content .first-box main{
+        flex-direction: column;
+        background-color: var(--b);
+        height: auto;
+
+    }
+
+    #main-content .first-box main .box-text .texts h1{
+        font-size: 1.5em;
+        text-align: center;
+    }
+    
+    #main-content .first-box main .box-text .texts h3{
+        font-size: 0.6em;
+        text-align: center;
+
+        margin: 0 0 0 0;
+    }
+    #main-content .first-box main .box-forms form{
+        height: auto;
+        width: 100%;
+    }
+
+    #main-content .first-box main .box-forms form label{
+        height: auto;
+        
+        font-size: 1em;
+        padding: 3%;
+        text-align: center;
+    }
+
+    #main-content .first-box main .box-forms form input::placeholder{
+        font-size: 1em;
+    }
+
+    #main-content .first-box main .box-forms form button{
+        font-size: 0.7em;
+    }
+}
+
+
+
+
 @media screen and (max-width: 915px){
     #main-content .second-box{
         width: 100%;
@@ -719,67 +794,5 @@ AS BOX SAO SEPARADAS EM
     #main-content .second-box .box-text .texts h3{
         font-size: 0.8em;
         text-align: center;
-    }
-}
-
-@media screen and (max-width: 915px){
-    #main-content .first-box header{
-        width: 100%;
-        /* height: 20%; */
-        /* background-color: aqua; */
-
-        margin-top: 5vh;
-
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-    }
-
-    #main-content .first-box header .logo{
-        width: 40px;
-    }
-    
-    #main-content .first-box header h2{
-        font-size: 0.9em;
-    }
-    
-    #main-content .first-box main{
-        flex-direction: column;
-        background-color: var(--b);
-        height: auto;
-
-    }
-
-    #main-content .first-box main .box-text .texts h1{
-        font-size: 1.5em;
-        text-align: center;
-    }
-    
-    #main-content .first-box main .box-text .texts h3{
-        font-size: 0.6em;
-        text-align: center;
-
-        margin: 0 0 0 0;
-    }
-    #main-content .first-box main .box-forms form{
-        height: auto;
-        width: 100%;
-    }
-
-    #main-content .first-box main .box-forms form label{
-        height: auto;
-        
-        font-size: 1em;
-        padding: 3%;
-        text-align: center;
-    }
-
-    #main-content .first-box main .box-forms form input::placeholder{
-        font-size: 1em;
-    }
-
-    #main-content .first-box main .box-forms form button{
-        font-size: 0.7em;
     }
 }
