@@ -300,6 +300,8 @@ AS BOX SAO SEPARADAS EM
     flex-direction: column;
 }
 
+/* -------------------- */
+
 #main-content .third-box .content .box-text{
     width: 100%;
     height: 15%;
@@ -314,6 +316,9 @@ AS BOX SAO SEPARADAS EM
     font-family: 'Krona';
     color: var(--b);
 }
+
+/* -------------------- */
+
 
 #main-content .third-box .content .box-cards{
    /* background-color: blueviolet; */
@@ -355,6 +360,8 @@ AS BOX SAO SEPARADAS EM
 
 }
 
+/* -------------------- */
+
 #main-content .third-box .content .box-cards *.card .texts{
     display: flex;
     align-items: start;
@@ -376,6 +383,9 @@ AS BOX SAO SEPARADAS EM
 
     color: var(--b);
 }
+
+/* -------------------- */
+
 
 #main-content .third-box .content .btn{
     width: 100%;
@@ -443,6 +453,8 @@ AS BOX SAO SEPARADAS EM
     flex-direction: column;
 }
 
+/* -------------------- */
+
 #main-content .fourth-box .content .box-text{
     /* background-color: violet; */
     width: 100%;
@@ -458,6 +470,8 @@ AS BOX SAO SEPARADAS EM
     font-size: 3.0em;
     color: var(--b);
 }
+
+/* -------------------- */
 
 #main-content .fourth-box .content .box-btns{
     width: 100%;
@@ -532,7 +546,7 @@ AS BOX SAO SEPARADAS EM
     flex-direction: row;
 }
 
-
+/* -------------------- */
 
 #main-content .last-box main .box-texts{
     display: flex;
@@ -568,7 +582,7 @@ AS BOX SAO SEPARADAS EM
     font-size: 3.0em;
 }
 
-
+ /* -------------------- */
 
 #main-content .last-box main .box-card{
     height: 100%;
@@ -636,6 +650,8 @@ AS BOX SAO SEPARADAS EM
     font-size: 0.7em;
 }
 
+/* -------------------- */
+
 #main-content .last-box footer{
     height: 20%;
     width: 100%;
@@ -661,7 +677,15 @@ AS BOX SAO SEPARADAS EM
     justify-content: center;
 }
 
+/*
+--------------------------------------
+TODO O CSS ABAIXO É REFERENTE AO CODIGO QUE PERMITE A RESPONSIVIDADE
+DO SITE PARA OUTROS TIPOS DE TELAS.
 
+TODOS ESTAO CRIADOS RESPECTIVAMENTE DE ACORDO COM A NUMERAÇAO
+DAS BOXS CRIADAS ANTERIORMENTE: FIRST, SECOND, THIRD [...]
+--------------------------------------
+*/
 
 @media screen and (max-width: 915px){
     #main-content .first-box header{
@@ -724,9 +748,6 @@ AS BOX SAO SEPARADAS EM
         font-size: 0.7em;
     }
 }
-
-
-
 
 @media screen and (max-width: 915px){
     #main-content .second-box{
@@ -796,4 +817,9 @@ AS BOX SAO SEPARADAS EM
         font-size: 0.8em;
         text-align: center;
     }
+}
+
+
+@media screen and (max-width: 915px){
+    
 }
