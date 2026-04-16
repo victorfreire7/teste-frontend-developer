@@ -282,7 +282,7 @@ AS BOX SAO SEPARADAS EM
 #main-content .third-box{
     width: 100%;
     height: 100vh;
-    background-color: #CFD2D1;
+    background-color: var(--medio);
 
     display: flex;
     align-items: center;
@@ -845,7 +845,7 @@ DAS BOXS CRIADAS ANTERIORMENTE: FIRST, SECOND, THIRD [...]
     #main-content .third-box{
         width: 100%;
         height: auto;
-        background-color: #CFD2D1;
+        background-color: var(--medio);
 
         display: flex;
         align-items: center;
