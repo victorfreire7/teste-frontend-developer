@@ -2,7 +2,11 @@ document.addEventListener('click', (e) => {
     const el = e.target;
 
     if(el.classList.contains('scroll-btn')){
-        alert('scroll')
+        return window.scroll({
+            top: 0,
+            left: 0,
+            behavior: "smooth"
+        });
     }
 });
 
