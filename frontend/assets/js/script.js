@@ -28,4 +28,19 @@ document.addEventListener('submit', (e) => {
 
     alert('E-mail enviado com sucesso para Upscende!');
     return window.location.reload();
-})
+});
+
+document.addEventListener('click', (e) => {
+    const el = e.target;
+    const btnSelect = document.querySelectorAll('.response');
+
+    console.log(btnSelect);
+
+    if(el.classList.contains('scroll-btn')){
+        return window.scroll({
+            top: 0,
+            left: 0,
+            behavior: "smooth"
+        });
+    }
+});

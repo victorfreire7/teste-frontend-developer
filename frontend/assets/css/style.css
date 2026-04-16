@@ -434,7 +434,7 @@ AS BOX SAO SEPARADAS EM
 
 #main-content .fourth-box{
     width: 100%;
-    height: 80vh;
+    height: auto;
     background-color: var(--w);
 
     display: flex;
@@ -449,7 +449,7 @@ AS BOX SAO SEPARADAS EM
 
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     flex-direction: column;
 }
 
@@ -458,7 +458,7 @@ AS BOX SAO SEPARADAS EM
 #main-content .fourth-box .content .box-text{
     /* background-color: violet; */
     width: 100%;
-    height: 15%;
+    height: 15vh;
 
     display: flex;
     align-items: center;
@@ -475,22 +475,21 @@ AS BOX SAO SEPARADAS EM
 
 #main-content .fourth-box .content .box-btns{
     width: 100%;
-    height: 85%;
+    height: auto;
     /* background-color: blueviolet; */
 
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    margin-bottom: 7%;
     
 }
 
 #main-content .fourth-box .content .box-btns *.btns{
-    margin: 0.25%;
+    margin: 0 0 2% 0;
     
     width: 80%;
-    height: 20%;
+    height: 12vh;
     background-color: var(--w);
     border: 2px solid var(--b);
     
@@ -518,6 +517,34 @@ AS BOX SAO SEPARADAS EM
     color: var(--b);
 }
 
+/* -------------------- */
+
+#main-content .fourth-box .content .box-btns *.response{
+    margin: 0 0 2% 0;
+    
+    width: 60%;
+    height: auto;
+    background-color: var(--w);
+    border: 2px solid var(--b);
+    
+    border-radius: 10px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    cursor: pointer;
+}
+
+#main-content .fourth-box .content .box-btns *.response p{
+    font-family: 'Krona';
+    font-size: 0.8em;
+    padding: 3%;
+}
+
+/* #main-content .fourth-box .content .box-btns *.disable{
+    display: none;
+} */
 
 /*
 --------------------------------------
