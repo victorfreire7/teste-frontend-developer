@@ -8,7 +8,7 @@
 
 ## Motivação e Contexto Académico
 
-Este tema foi escolhido com base em uma Iniciação Científica que realizei, onde estudei a criação de uma balança de bioimpedância. Esse conhecimento técnico e acadêmico proporcionou a base sólida para desenvolver uma landing page que não apenas apresenta o conceito, mas explora suas aplicações práticas.
+Este tema foi escolhido com base em uma Iniciação Científica que iniciei, onde estudei a criação de uma balança de bioimpedância. Esse conhecimento técnico e acadêmico proporcionou a base sólida para desenvolver uma landing page que não apenas apresenta o conceito, mas explora suas aplicações práticas.
 
 ## O que busquei no desenvolvimento do código
 
