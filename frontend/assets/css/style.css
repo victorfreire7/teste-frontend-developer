@@ -821,5 +821,372 @@ DAS BOXS CRIADAS ANTERIORMENTE: FIRST, SECOND, THIRD [...]
 
 
 @media screen and (max-width: 915px){
-    
+    #main-content .third-box{
+        width: 100%;
+        height: auto;
+        background-color: #CFD2D1;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #main-content .third-box .content{
+        height: auto;
+        width: 90%;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #main-content .third-box .content .box-text{
+        width: 100%;
+        height: auto;
+        
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        padding: 5% 0;
+    }
+
+    #main-content .third-box .content .box-text h1{
+        font-size: 1.8em;
+        text-align: center;
+    }
+
+    #main-content .third-box .content .box-cards{
+        width: 100%;
+        height: auto;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row: auto;
+        grid-column-gap: 0;
+        grid-row-gap: 5%;
+
+        justify-content: center;
+        align-items: center;
+        padding: 5% 0;
+    }
+
+    #main-content .third-box .content .box-cards *.card{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 3%;
+    }
+
+    #main-content .third-box .content .box-cards *.card article{
+        padding: 5%;
+        margin-right: 3%;
+        
+        background-color: var(--b);
+        border-radius: 20px;
+
+        color: var(--w);
+        font-size: 1.3em;
+        font-family: 'Krona';
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #main-content .third-box .content .box-cards *.card .texts{
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #main-content .third-box .content .box-cards *.card .texts h3{
+        font-family: 'Krona';
+        font-size: 0.9em;
+
+        color: var(--b);
+    }
+
+    #main-content .third-box .content .box-cards *.card .texts p{
+        padding: 3% 3% 0 0;
+        font-family: 'Krona';
+        font-size: 0.7em;
+
+        color: var(--b);
+    }
+
+    #main-content .third-box .content .btn{
+        width: 100%;
+        height: auto;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5% 0;
+    }
+
+    #main-content .third-box .content .btn button{
+        height: 50px;
+        width: 70%;
+        
+        color: var(--w);
+        background-color: var(--r);
+        border-radius: 10px;
+        
+        font-family: 'Krona';
+        font-size: 1.2em;
+        
+        cursor: pointer;
+    }
+
+    #main-content .third-box .content .btn button:hover{
+        transform: scale(1.1);
+        transition: 0.2s;
+    }
+
+    #main-content .third-box .content .btn button:not(:hover){
+        transform: scale(1.0);
+        transition: 0.2s;
+    }
+}
+
+@media screen and (max-width: 915px){
+    #main-content .fourth-box{
+        width: 100%;
+        height: auto;
+        background-color: var(--w);
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #main-content .fourth-box .content{
+        background-color: var(--w);
+        width: 90%;
+        height: auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        padding: 5% 0;
+    }
+
+    #main-content .fourth-box .content .box-text{
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3% 0;
+    }
+
+    #main-content .fourth-box .content .box-text h1{
+        font-family: 'Krona';
+        font-size: 2.0em;
+        color: var(--b);
+        text-align: center;
+    }
+
+    #main-content .fourth-box .content .box-btns{
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        margin-bottom: 0;
+        gap: 4%;
+    }
+
+    #main-content .fourth-box .content .box-btns *.btns{
+        margin: 0 0 10px 0;
+        
+        width: 100%;
+        height: auto;
+        background-color: var(--w);
+        border: 2px solid var(--b);
+        
+        border-radius: 10px;
+        padding: 4%;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        cursor: pointer;
+    }
+
+    #main-content .fourth-box .content .box-btns *.btns:hover{
+        transform: scale(1.05);
+        transition: 0.2s;
+    }
+
+    #main-content .fourth-box .content .box-btns *.btns:not(:hover){
+        transform: scale(1.0);
+        transition: 0.2s;
+    }
+
+    #main-content .fourth-box .content .box-btns *.btns h3{
+        font-family: 'Krona';
+        color: var(--b);
+        font-size: 0.9em;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 915px){
+    #main-content .last-box{
+        width: 100%;
+        height: auto;
+        background-color: var(--r);
+    }
+
+    #main-content .last-box main{
+        height: auto;
+        width: 100%;
+        background-color: var(--r);
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 5% 0;
+    }
+
+    #main-content .last-box main .box-texts{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+        height: auto;
+        width: 90%;
+        padding: 3% 0;
+    }
+
+    #main-content .last-box main .box-texts .texts{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        height: auto;
+        width: 100%;
+    }
+
+    #main-content .last-box main .box-texts .texts *{
+        font-family: 'Krona';
+        color: var(--w);
+        padding-bottom: 3%;
+        text-align: center;
+    }
+
+    #main-content .last-box main .box-texts .texts h1{
+        font-size: 1.8em;
+    }
+
+    #main-content .last-box main .box-texts .texts h3{
+        font-size: 0.9em;
+    }
+
+    #main-content .last-box main .box-card{
+        height: auto;
+        width: 90%;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3% 0;
+    }
+
+    #main-content .last-box main .box-card .card-infos{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+
+        background-color: var(--w);
+        border-radius: 20px;
+
+        height: auto;
+        width: 100%;
+        padding: 5%;
+        gap: 3%;
+    }
+
+    #main-content .last-box main .box-card .card-infos *{
+        font-family: 'Krona';
+        color: var(--r);
+    }
+
+    #main-content .last-box main .box-card .card-infos h3{
+        text-align: center;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.0em;
+    }
+
+    #main-content .last-box main .box-card .card-infos button{
+        background-color: var(--r);
+        
+        width: 70%;
+        height: 50px;
+        color: var(--w);
+        
+        border-radius: 10px;
+        font-size: 1.0em;
+        cursor: pointer;
+    }
+
+    #main-content .last-box main .box-card .card-infos button:hover{
+        transform: scale(1.1);
+        transition: 0.2s;
+    }
+
+    #main-content .last-box main .box-card .card-infos button:not(:hover){
+        transform: scale(1.0);
+        transition: 0.2s;
+    }
+
+    #main-content .last-box main .box-card .card-infos p{
+        text-align: center;
+        width: 100%;
+        font-size: 0.8em;
+    }
+
+    #main-content .last-box footer{
+        height: auto;
+        width: 100%;
+        background-color: var(--br);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 5% 0;
+    }
+
+    #main-content .last-box footer p{
+        padding-bottom: 2%;
+        font-family: 'Krona';
+        font-size: 0.65em;
+        color: var(--w);
+
+        height: auto;
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
 }
