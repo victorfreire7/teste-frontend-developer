@@ -30,17 +30,10 @@ document.addEventListener('submit', (e) => {
     return window.location.reload();
 });
 
-document.addEventListener('click', (e) => {
-    const el = e.target;
-    const btnSelect = document.querySelectorAll('.response');
-
-    console.log(btnSelect);
-
-    if(el.classList.contains('scroll-btn')){
-        return window.scroll({
-            top: 0,
-            left: 0,
-            behavior: "smooth"
-        });
-    }
+document.querySelectorAll('.box-btns .btns').forEach((btn) => {
+    btn.addEventListener('mouseenter', function() {
+        document.querySelectorAll('.box-btns .btns').forEach(b => b.classList.remove('active'));
+        
+        this.classList.add('active');
+    });
 });
