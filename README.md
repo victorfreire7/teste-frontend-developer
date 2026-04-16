@@ -1,58 +1,59 @@
-# Teste para estágio Frontend e Full-Stack
+# Teste para estágio Frontend e Full-Stack (Finalizado)
 
-## Sobre a Ellos Design
+> O projeto está visivel em [https://victorfreire7.github.io/teste-frontend-developer/frontend/](https://victorfreire7.github.io/teste-frontend-developer/frontend/). Mais abaixo no README, há também um modo de inicialização local do projeto.
 
-A **Ellos Design** é uma agência de marketing e criação de sites localizada em Guarulhos / SP. Somos uma empresa em constante evolução e sempre estamos abertos para pessoas que gostem de tecnologia e queiram trabalhar na área, mas que principalmente queiram aprender e crescer com a nossa empresa.
+## Visão Geral do Projeto
 
-## Sobre o teste
+**Upscend** é uma landing page moderna e responsiva que apresenta uma solução inovadora em saúde e bem-estar: uma balança inteligente equipada com tecnologia de bioimpedância avançada.
 
-Este é um teste prático que desenvolvemos para a avaliação dos candidatos participantes de nosso processo seletivo para vagas de Frontend ou Full-Stack.
+## Motivação e Contexto Académico
 
-## Tecnologias para o desafio
+Este tema foi escolhido com base em uma Iniciação Científica que realizei, onde estudei a criação de uma balança de bioimpedância. Esse conhecimento técnico e acadêmico proporcionou a base sólida para desenvolver uma landing page que não apenas apresenta o conceito, mas explora suas aplicações práticas.
 
-Você deve utilizar as seguintes tecnologias para o desenvolvimento do teste:
+## O que busquei no desenvolvimento do código
 
-- HTML5
-- CSS
-- JavaScript ou jQuery
-- PHP (Para Full-Stack)
-- MySQL (Para Full-Stack)
+### Organização
+- **Componentes Reutilizáveis**: CSS organizado com sistema de nomeação de classes de fácil entendimento e visualização
+- **Documentação Inline**: Comentários explicativos em cada seção do código
 
-## O que nos impressionaria no teste
+### Otimização
+- **Leveza**: Código CSS e JavaScript otimizado para carregamento rápido
+- **Sem Dependências Desnecessárias**: Implementação pura com HTML5, CSS3 e JavaScript Vanilla
+- **Eficiência de Renderização**: Seletores CSS otimizados e manipulação DOM
 
-- Utilização de um pré-processador para o CSS (De preferência o Sass)
-- Aplicação de animações em CSS (Ex: Animações ao realizar scroll)
-- Ver o teste rodando em live (Bucket estático S3, Heroku, Firebase Hosting, etc)
-- Documentação do projeto (Com instruções para executar)
+### Interatividade e UX
+- **Animações Suaves**: Transições CSS de 0.2s e 0.3s para feedback visual
+- **Scroll Smooth**: Navegação fluida com scroll suave no arquivo JS:
 
-## O que avaliaremos no seu teste
+    ```
+    return window.scroll({
+        top: 0,
+        left: 0,
+        behavior: "smooth"
+    });
+    ```
+- **Validação de Formulário**: Sistema que valida também no frontend todos os campos antes do envio
 
-- Criatividade
-- Organização do código
-- Performance do código
-- Boas práticas de desenvolvimento
-- Documentação do código
-- Adaptação mobile (layout responsivo)
-- Documentação do projeto (Com instruções para executar)
+### Boas Práticas de Desenvolvimento
+- **Validação Robusta**: Sistema de validação que impede envio com campos vazios
+- **Semântica HTML5**: Uso apropriado de tags semânticas (`<header>`, `<article>`, `<section>`, `<footer>`)
 
-## Etapas para realização do teste
+### Identidade Visual
+- **Dark & Light Balance**: Background dark (#262626) com acentos em terra-cotta (#73352F)
+- **Tipografia Consistente**: Fonte Krona One em toda a interface para identidade visual
+- **Contraste Otimizado**: Cores pensadas para legibilidade e impacto visual
 
-- Faça um [fork](https://github.com/Ellos-Design/teste-frontend-developer/fork) desse projeto em sua conta do GitHub
-- Realize o desafio proposto
-- Faça um push para seu repositório com o desafio implementado
-- Envie um email para (vagas@ellosdesign.com.br) com a URL do seu projeto avisando que você concluiu o teste
+<img src="frontend/assets/img/paleta.png"></img>
 
-## O desafio
+---
 
-Você deverá desenvolver uma landing page seguindo a estrutura exibida na imagem abaixo. Você pode utilizar os textos e imagens de sua preferência para a criação da página.
+## Modo de Inicialização
 
-#### Full-Stack
+- **1º.** Realizar clone do projeto com digitando o seguinte comando no terminal:
+    
+    ```
+    git clone https://github.com/victorfreire7/teste-frontend-developer.git
+    ```
 
-Deixar o formulário da landing page funcional, onde ao preencher as informações e clicar para enviar, o formulário será submetido e os dados deverão ser gravados em um banco de dados (Neste caso será necessário nos enviar o arquivo SQL para podermos implementar o banco para avaliação do teste).
+- **2º.** Abrir o arquivo 'index.html', dentro da pasta 'frontend' do repositório.
 
-> [!IMPORTANT]
-> Atenção: O mockup abaixo é apenas um esqueleto estrutural. Não queremos que você replique o design cinza e estático do modelo. Use sua criatividade para definir uma marca fictícia (ou real), escolher uma paleta de cores, tipografia e imagens que deem vida ao projeto. Sinta-se livre para adaptar o layout, desde que mantenha os elementos essenciais.
-
-![Template da página a ser desenvolvida](https://github.com/Ellos-Design/teste-frontend-developer/blob/master/wireframe.png?raw=true)
-
-**Boa sorte! Use sua criatividade e mostre do que você é capaz.**
