@@ -30,6 +30,7 @@
     flex-direction: column;
 }
 
+
 /*
 --------------------------------------
 AS BOX A SEGUIR DIZEM A RESPEITO A PRIMEIRA BOX DO SITE
@@ -193,6 +194,7 @@ AS BOX SAO SEPARADAS EM
     transition: 0.2s;
 }
 
+
 /*
 --------------------------------------
 AS BOX A SEGUIR DIZEM A RESPEITO A SEGUNDA BOX DO SITE
@@ -256,8 +258,179 @@ AS BOX SAO SEPARADAS EM
     margin-bottom: 5%;
 }
 #main-content .second-box .box-text .texts h1{
-font-size: 3.5em;
+    font-size: 3.5em;
 }
+
+/*
+--------------------------------------
+AS BOX A SEGUIR DIZEM A RESPEITO A TERCEIRA BOX DO SITE
+
+AS BOX SAO SEPARADAS EM
+- HEADER (com logotipo e contato)
+- MAIN (com o conteudo principal)
+--------------------------------------
+*/
+
+#main-content .third-box{
+    width: 100%;
+    height: 70vh;
+    background-color: #CFD2D1;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+#main-content .third-box .content{
+    height: 100%;
+    background-color: yellowgreen;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#main-content .third-box .content .box-text{
+    width: 100%;
+    height: 15%;
+    background-color: aqua;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-content .third-box .content .box-cards{
+   background-color: blueviolet;
+   height: 70%;
+}
+
+#main-content .third-box .content .box-cards *.card{
+
+}
+
+#main-content .third-box .content .box-cards *.card article{
+
+}
+
+#main-content .third-box .content .box-cards *.card .texts{
+
+}
+
+#main-content .third-box .content .box-cards *.card .texts h3{
+
+}
+
+#main-content .third-box .content .box-cards *.card .texts p{
+
+}
+
+#main-content .third-box .content .btn{
+    width: 100%;
+    height: 15%;
+    background-color: aqua;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+/*
+--------------------------------------
+AS BOX A SEGUIR DIZEM A RESPEITO A QUARTA BOX DO SITE
+
+AS BOX SAO SEPARADAS EM
+- BOX-TEXT (O título do box)
+- BOX-BTNS (todos os cards que vao apresentar as informacoes do FAQ)
+--------------------------------------
+*/
+
+#main-content .fourth-box{
+    width: 100%;
+    height: 80vh;
+    background-color: var(--w);
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}   
+
+#main-content .fourth-box .content{
+    background-color: var(--w);
+    width: 75%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+#main-content .fourth-box .content .box-text{
+    /* background-color: violet; */
+    width: 100%;
+    height: 15%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-content .fourth-box .content .box-text h1{
+    font-family: 'Krona';
+    font-size: 3.0em;
+    color: var(--b);
+}
+
+#main-content .fourth-box .content .box-btns{
+    width: 100%;
+    height: 85%;
+    /* background-color: blueviolet; */
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-bottom: 7%;
+    
+}
+
+#main-content .fourth-box .content .box-btns *.btns{
+    margin: 0.25%;
+    
+    width: 80%;
+    height: 20%;
+    background-color: var(--w);
+    border: 2px solid var(--b);
+    
+    border-radius: 10px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    cursor: pointer;
+}
+
+#main-content .fourth-box .content .box-btns *.btns:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+#main-content .fourth-box .content .box-btns *.btns:not(hover){
+    transform: scale(1.0);
+    transition: 0.2s;
+}
+
+#main-content .fourth-box .content .box-btns *.btns h3{
+    font-family: 'Krona';
+    color: var(--b);
+}
+
 
 /*
 --------------------------------------
