@@ -175,7 +175,7 @@ AS BOX SAO SEPARADAS EM
     width: 70%;
 
     font-family: 'Krona';
-    font-size: 1.3em;
+    font-size: 1em;
     color: var(--w);
 
     background-color: var(--r);
@@ -586,8 +586,6 @@ AS BOX SAO SEPARADAS EM
     width: 75%;
 }
 
-
-
 #main-content .last-box main .box-card .card-infos *{
     font-family: 'Krona';
     color: var(--r);
@@ -653,4 +651,133 @@ AS BOX SAO SEPARADAS EM
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media screen and (max-width: 915px){
+    #main-content .second-box{
+        width: 100%;
+        /* height: 70; */
+        /* background-color: blue; */
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #main-content .second-box .box-image{
+        height: 40%;
+        width: 80%;
+        background-color: var(--b);
+        margin: 5%;
+
+        border-radius: 20px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #main-content .second-box .box-image img{
+        height: 80%;
+        object-fit: cover;
+    }
+
+    #main-content .second-box .box-text{
+        width: 70%;
+        /* background-color: violet; */
+
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #main-content .second-box .box-text .texts{
+
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #main-content .second-box .box-text .texts *{
+        
+        font-family: 'Krona';
+        color: var(--b);
+        /* background-color: aqua; */
+        margin-bottom: 5%;
+    }
+    #main-content .second-box .box-text .texts h1{
+        font-size: 2.5em;
+        text-align: center;
+
+        align-self: center;
+    }
+
+    #main-content .second-box .box-text .texts h3{
+        font-size: 0.8em;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 915px){
+    #main-content .first-box header{
+        width: 100%;
+        /* height: 20%; */
+        /* background-color: aqua; */
+
+        margin-top: 5vh;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    #main-content .first-box header .logo{
+        width: 40px;
+    }
+    
+    #main-content .first-box header h2{
+        font-size: 0.9em;
+    }
+    
+    #main-content .first-box main{
+        flex-direction: column;
+        background-color: var(--b);
+        height: auto;
+
+    }
+
+    #main-content .first-box main .box-text .texts h1{
+        font-size: 1.5em;
+        text-align: center;
+    }
+    
+    #main-content .first-box main .box-text .texts h3{
+        font-size: 0.6em;
+        text-align: center;
+
+        margin: 0 0 0 0;
+    }
+    #main-content .first-box main .box-forms form{
+        height: auto;
+        width: 100%;
+    }
+
+    #main-content .first-box main .box-forms form label{
+        height: auto;
+        
+        font-size: 1em;
+        padding: 3%;
+        text-align: center;
+    }
+
+    #main-content .first-box main .box-forms form input::placeholder{
+        font-size: 1em;
+    }
+
+    #main-content .first-box main .box-forms form button{
+        font-size: 0.7em;
+    }
 }
